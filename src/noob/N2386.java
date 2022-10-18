@@ -14,17 +14,13 @@ public class N2386 {
             int cnt = 0;
 
             for(int i=0;i<arr.length;i++)
-                arr[i] = st.nextToken();
+                arr[i] = st.nextToken().toLowerCase();
             if(arr[0].equals("#"))
                 break;
 
-            System.out.println(arr[0]);
-            System.out.println(arr[1]);
-            System.out.println(arr[2]);
-
             for(int i=1;i<arr.length;i++){
                 for(int j=0;j<arr[i].length();j++){
-                    if(arr[0].charAt(0)==(arr[i].charAt(j)) || arr[0].charAt(0)==(char)((arr[i].charAt(j))-'a')){
+                    if(arr[0].charAt(0)==(arr[i].charAt(j))){
                         cnt++;
                     }
 
