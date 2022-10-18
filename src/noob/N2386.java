@@ -23,7 +23,6 @@ public class N2386 {
                     if(arr[0].charAt(0)==(arr[i].charAt(j))){
                         cnt++;
                     }
-
                 }
             }
             System.out.println(arr[0]+" "+cnt);
